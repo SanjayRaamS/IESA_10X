@@ -1,0 +1,14 @@
+# Development-only dependencies for Drift-Sense.
+#
+# scikit-learn is used ONLY by train_confidence.py, to FIT the confidence
+# model.  It is NOT a runtime dependency: core/confidence.py does inference
+# with numpy alone (one dot product against a ~2 KB .npz), and localize.py
+# never imports sklearn.  requirements.txt is the runtime set that claude.md
+# constrains, and it stays at five direct dependencies.
+#
+# Install with:
+#   python -m pip install -r requirements.txt -r requirements-dev.txt
+-r requirements.txt
+scikit-learn==1.9.0
+joblib==1.5.3
+threadpoolctl==3.6.0

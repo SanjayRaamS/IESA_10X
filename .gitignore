@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated datasets — reproducible from their seeds, so not committed.
+#   python generate_dataset.py --style both --n 40 --out data/train --seed 0
+# The held-out set is regenerated automatically by evaluate.py.
+data/
+results/val_seed4242/
+
+# Everything else in results/ IS committed: metrics.json, sweep.csv, the
+# figures and the demo reel are the evidence for the reported numbers.
+
+# OS / editor noise
+.DS_Store
+*.swp
