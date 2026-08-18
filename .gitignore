@@ -16,3 +16,8 @@ results/val_seed4242/
 # OS / editor noise
 .DS_Store
 *.swp
+
+# Agent instructions — local only, not part of the deliverable.
+claude.md
+CLAUDE.md
+.claude/
