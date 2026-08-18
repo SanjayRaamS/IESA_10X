@@ -3,7 +3,7 @@
 # scikit-learn is used ONLY by train_confidence.py, to FIT the confidence
 # model.  It is NOT a runtime dependency: core/confidence.py does inference
 # with numpy alone (one dot product against a ~2 KB .npz), and localize.py
-# never imports sklearn.  requirements.txt is the runtime set that claude.md
+# never imports sklearn.  requirements.txt is the runtime set that the brief
 # constrains, and it stays at five direct dependencies.
 #
 # Install with:

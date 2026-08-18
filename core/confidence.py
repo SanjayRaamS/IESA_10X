@@ -10,7 +10,7 @@ whether this model is present, absent or wrong.
 Training lives in `train_confidence.py` and uses scikit-learn; nothing here
 imports it.  The fitted model is six coefficients, an intercept and a
 standardiser, stored as a ~2 KB .npz, so inference is one dot product and the
-runtime dependency set stays numpy-only (CLAUDE.md hard constraint).
+runtime dependency set stays numpy-only (hard constraint from the brief).
 
 The features are deliberately all SCALE-FREE — ratios, counts and correlation
 coefficients, never raw scores or pixel sizes.  A feature measured in score

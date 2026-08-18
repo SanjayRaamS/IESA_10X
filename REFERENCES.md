@@ -230,7 +230,7 @@ magnitude spectrum to recover scale and rotation *without* translation.
 *magnitude* of the Fourier transform is translation-invariant, so rotation
 becomes a shift in angle and scale a shift in log-radius. This is what lets
 Drift-Sense **solve geometry before it ever thinks about position**, which is
-the thesis in CLAUDE.md ("periodic component carries zero position information
+the thesis in the brief ("periodic component carries zero position information
 but perfect scale/rotation information") expressed as an algorithm.
 
 **Where we go beyond [Reddy1996], and why we had to.** Textbook log-polar

@@ -4,7 +4,7 @@ render_dram / render_finfet produce the IDEAL layout (no noise, no blur) at
 high magnification: a float32 image in [0, 1] plus a meta dict recording the
 lattice pitches and every aperiodic feature injected.
 
-Core thesis (CLAUDE.md): the periodic lattice carries scale/rotation only;
+Core thesis (from the brief): the periodic lattice carries scale/rotation only;
 localisation depends entirely on aperiodic structure.  params['aperiodic_level']
 in [0, 1] controls how much is injected; at 0.0 the output is a pure lattice
 (used to demonstrate the template-matching failure mode).

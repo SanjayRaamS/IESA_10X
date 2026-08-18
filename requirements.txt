@@ -3,7 +3,7 @@
 # on.
 #
 #   Python 3.14.7, Linux x86_64
-#   Direct dependencies (claude.md hard constraint): numpy, scipy,
+#   Direct dependencies (hard constraint from the brief): numpy, scipy,
 #   opencv-python (NOT contrib), Pillow, matplotlib.  Everything else below is
 #   a transitive dependency of matplotlib and is pinned only for reproducibility.
 #

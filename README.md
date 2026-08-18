@@ -64,7 +64,7 @@ depends on a specific version:
 .venv/bin/pip install numpy scipy opencv-python Pillow matplotlib
 ```
 
-`opencv-python`, not `opencv-contrib-python`: `claude.md` forbids contrib, and
+`opencv-python`, not `opencv-contrib-python`: the brief forbids contrib, and
 nothing in the pipeline needs it.
 
 > On Windows use `.venv\Scripts\python` instead of `.venv/bin/python`.
@@ -128,7 +128,7 @@ Useful flags:
 .venv/bin/python localize.py --ref ... --search ... --scale-prior 0.1
 ```
 
-`claude.md` forbids hardcoding the 10× factor, so here is the measurement that
+The brief forbids hardcoding the 10× factor, so here is the measurement that
 shows it is not hardcoded. Over all 40 pairs with the prior pinned at 0.1,
 while the true scales span 0.0912–0.1108:
 
@@ -362,7 +362,7 @@ P(correct)-vs-error). `localize.py --json` then carries a `p_correct` field.
 ### Timing
 
 Mean **451 ms/pair**, median 447 ms, p95 514 ms, single-core. Above the 300 ms
-target in `claude.md` — accuracy was preferred in every tradeoff, as the brief
+target — accuracy was preferred in every tradeoff, as the brief
 directs. Per stage: `score_maps` 153 ms, `estimate_transform` 151 ms,
 `build_template` 60 ms, `resolve` 33 ms, `rescore` 33 ms, `prep` 16 ms,
 `refine` 4 ms.
@@ -415,7 +415,6 @@ genuinely ambiguous, is in the `resolve()` docstring in `core/resolve.py`.
 
 ```
 drift-sense/
-├── claude.md               # the brief / spec
 ├── README.md               # this file
 ├── REFERENCES.md           # every design decision mapped to the literature
 ├── requirements.txt        # real pip freeze, exact pins (RUNTIME: 5 direct deps)
